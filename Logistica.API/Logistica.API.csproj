@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>fb4592c8-22b9-4437-9b20-cbc062822a48</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="techLogistica.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logistica.Application\Logistica.Application.csproj" />
+    <ProjectReference Include="..\Logistica.Persistence\Logistica.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
